@@ -4,9 +4,9 @@ import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from "@/components/provider/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "Quest",
+  title: "simple-answer-engine",
   icons: {
-    icon: ["/favicon.png"],
+    icon: ["/favicon.ico"],
   },
 };
 
