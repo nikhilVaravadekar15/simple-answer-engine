@@ -6,7 +6,7 @@ type Props = {};
 export default function SkeletonCard({}: Props) {
   return (
     <div className="w-full h-full p-4 flex items-center justify-center gap-4">
-      <div className="w-[60%] h-full p-4 flex gap-1 flex-col">
+      <div className="w-full h-full flex gap-1 flex-col">
         <Skeleton className="h-8 w-full rounded-2xl" />
         <Skeleton className="h-8 w-full rounded-2xl" />
         <Skeleton className="h-8 w-full rounded-2xl" />

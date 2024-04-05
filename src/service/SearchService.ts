@@ -29,13 +29,19 @@ class SearchService {
     }
   }
 
-  async search(query: string, searchTypeImage: boolean = false) {
-    if (searchTypeImage) {
-      this.queryurl.searchParams.set("searchType", "image");
-    }
+  async search(query: string, num: number = 10) {
     this.queryurl.searchParams.set("q", query);
+    this.queryurl.searchParams.set("num", num.toString());
     return await axios.get(this.queryurl.href);
   }
+
+  // async search(query: string, searchTypeImage: boolean = false) {
+  //   if (searchTypeImage) {
+  //     this.queryurl.searchParams.set("searchType", "image");
+  //   }
+  //   this.queryurl.searchParams.set("q", query);
+  //   return await axios.get(this.queryurl.href);
+  // }
 }
 
 const searchService = new SearchService();
